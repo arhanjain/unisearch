@@ -15,7 +15,7 @@ interface ArxivResults {
     link: Array<{$:{href:string}}>
 }
 
-const ARXIV_QUERY_API = 'http://export.arxiv.org/api/query'
+const ARXIV_QUERY_API = 'https://export.arxiv.org/api/query'
 function Search({classNames}: InputTypes) {
     const [articles, setArticles] = useState<Array<SearchResult>>([])
     const searchChange = (text: string) => {
