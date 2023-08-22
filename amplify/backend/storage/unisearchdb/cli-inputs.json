@@ -1,0 +1,14 @@
+{
+  "resourceName": "unisearchdb",
+  "tableName": "unisearchdb",
+  "partitionKey": {
+    "fieldName": "username",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "paper_id",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

@@ -1,0 +1,107 @@
+{
+  "api": {
+    "unisearchAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "unisearchTest"
+        },
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "unisearchManagePapers"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "auth": {
+    "unisearchc96cff3c": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [
+          "EMAIL"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "unisearchManagePapers": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "unisearchTest": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_unisearchManagePapers_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "unisearchManagePapers"
+        }
+      ]
+    },
+    "AMPLIFY_function_unisearchManagePapers_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "unisearchManagePapers"
+        }
+      ]
+    },
+    "AMPLIFY_function_unisearchTest_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "unisearchTest"
+        }
+      ]
+    },
+    "AMPLIFY_function_unisearchTest_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "unisearchTest"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "unisearchdb": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

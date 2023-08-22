@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "paths": {
+    "/test": {
+      "name": "/test",
+      "lambdaFunction": "unisearchTest",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/manage-papers": {
+      "name": "/manage-papers",
+      "lambdaFunction": "unisearchManagePapers",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

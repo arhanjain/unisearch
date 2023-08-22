@@ -1,0 +1,23 @@
+{ 
+    "headers": {
+        "Authorization": "eyJraWQiOiJINk1reXZUeTlUZlZ5bjY3c2hCZnZlTFBndmQzUjBidXpwT2FaWXFsdnIwPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI3OGQxYTNhMC05MGMxLTcwYjgtNDhkMy0wM2IxMDNmMWE0ZDYiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLnVzLXdlc3QtMi5hbWF6b25hd3MuY29tXC91cy13ZXN0LTJfZlYzUjFOeWtBIiwiY29nbml0bzp1c2VybmFtZSI6Ijc4ZDFhM2EwLTkwYzEtNzBiOC00OGQzLTAzYjEwM2YxYTRkNiIsIm9yaWdpbl9qdGkiOiI4NTdhNGFhNC1iMmNmLTQ3NWMtYTY4ZC04NWZhZTEyYWU5ODUiLCJhdWQiOiJpNWtxZjFzNzhoNG9ydW1oa3Z0Z3VtY2Y4IiwiZXZlbnRfaWQiOiI1ZjQxZDAyZC1lNmE3LTRkM2YtYTQ5NC1jOTUxZjUxMDI2YjEiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5MjQxNDI4MCwiZXhwIjoxNjkyNDE3ODgwLCJpYXQiOjE2OTI0MTQyODAsImp0aSI6IjMxZmE2ODM5LWI4YjgtNGVjZS04YzE0LWE0OTE5OWYxZTA0YSIsImVtYWlsIjoiYXJoYW4uajA0QGdtYWlsLmNvbSJ9.S4Pbs_288sSc85tgOEYHt4C6z2Dr5JE5nYvq3RNDZ6_jixiiWkPe3Q-moIRrHh_EZtgubmPvDLOGd8hKRqUTLVu1mixHERFmwvgNTKkazs28YKfKdteDNeUubIG3rOcsAvS4UdAvm1rfHKyd857QlzzgRLFmummFyk4BTLZgKLYn_kownA2um6v4uCwbERlDs-0MKtiZV4ZTnAIuK2C3wPbUkRnIUw0vdLiMs2ClaWnhzRDSljbDOmubwLrYc54Uk1ZDe9GJ7W3qZf4XrFhNcN9pHCig97vP1LKf1ynvw8ZFYkByKSHcSciigSO70417t3O5GmBnVUoPeaIhyfE75w"
+    },
+    "path": "/add-papers",
+    "body": {
+        "add": [
+            {
+                "id": "github.com",
+                "authors": ["author1", "author2"],
+                "title": "title"
+            },
+            {
+                "id": "linkedin.com",
+                "authors": ["author3"],
+                "title": "title2"
+            }
+
+        ],
+        "remove": [
+        ]
+    }
+}

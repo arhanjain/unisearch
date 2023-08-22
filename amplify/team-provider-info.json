@@ -1,0 +1,37 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-unisearch-dev-232601-authRole",
+      "UnauthRoleArn": "arn:aws:iam::656267712111:role/amplify-unisearch-dev-232601-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::656267712111:role/amplify-unisearch-dev-232601-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-unisearch-dev-232601-deployment",
+      "UnauthRoleName": "amplify-unisearch-dev-232601-unauthRole",
+      "StackName": "amplify-unisearch-dev-232601",
+      "StackId": "arn:aws:cloudformation:us-west-2:656267712111:stack/amplify-unisearch-dev-232601/9b799a00-3b34-11ee-b320-0a7b05ad8793",
+      "AmplifyAppId": "d9nkupgh9g3er",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-unisearch-dev-232601-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "function": {
+        "unisearchTest": {
+          "deploymentBucketName": "amplify-unisearch-dev-232601-deployment",
+          "s3Key": "amplify-builds/unisearchTest-31414e46306e47664477-build.zip"
+        },
+        "unisearchManagePapers": {
+          "deploymentBucketName": "amplify-unisearch-dev-232601-deployment",
+          "s3Key": "amplify-builds/unisearchManagePapers-6c644f59707343655837-build.zip"
+        }
+      },
+      "auth": {
+        "unisearchc96cff3c": {}
+      },
+      "api": {
+        "unisearchAPI": {}
+      },
+      "storage": {
+        "unisearchdb": {}
+      }
+    }
+  }
+}
