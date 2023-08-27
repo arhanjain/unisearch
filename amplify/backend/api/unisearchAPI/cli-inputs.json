@@ -8,8 +8,8 @@
         "setting": "open"
       }
     },
-    "/manage-papers": {
-      "name": "/manage-papers",
+    "/add-papers": {
+      "name": "/add-papers",
       "lambdaFunction": "unisearchManagePapers",
       "permissions": {
         "setting": "private",

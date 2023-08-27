@@ -13,21 +13,18 @@
       "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-unisearch-dev-232601-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
-      "function": {
-        "unisearchTest": {
-          "deploymentBucketName": "amplify-unisearch-dev-232601-deployment",
-          "s3Key": "amplify-builds/unisearchTest-31414e46306e47664477-build.zip"
-        },
-        "unisearchManagePapers": {
-          "deploymentBucketName": "amplify-unisearch-dev-232601-deployment",
-          "s3Key": "amplify-builds/unisearchManagePapers-6c644f59707343655837-build.zip"
-        }
-      },
       "auth": {
         "unisearchc96cff3c": {}
       },
-      "api": {
-        "unisearchAPI": {}
+      "function": {
+        "unisearchManagePapers": {
+          "deploymentBucketName": "amplify-unisearch-dev-232601-deployment",
+          "s3Key": "amplify-builds/unisearchManagePapers-6c644f59707343655837-build.zip"
+        },
+        "unisearchTest": {
+          "deploymentBucketName": "amplify-unisearch-dev-232601-deployment",
+          "s3Key": "amplify-builds/unisearchTest-31414e46306e47664477-build.zip"
+        }
       },
       "storage": {
         "unisearchdb": {}

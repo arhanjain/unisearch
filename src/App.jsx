@@ -3,8 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
 import { API, Auth } from 'aws-amplify'
-import { Authenticator, useAuthenticator, withAuthenticator } from '@aws-amplify/ui-react'
 import '@aws-amplify/ui-react/styles.css';
+import Search from './components/Search'
 
 function App() {
 
@@ -29,24 +29,17 @@ function App() {
 
   return (
     <>
-      <Authenticator>
-        {({ signOut, user}) => (
-          <>
-            <div>
-              <a href="https://vitejs.dev" target="_blank">
-                <img src={viteLogo} className="logo" alt="Vite logo" />
-              </a>
-              <a href="https://react.dev" target="_blank">
-                <img src={reactLogo} className="logo react" alt="React logo" />
-              </a>
+      {/* <Authenticator>
+        {({ signOut, user}) => ( */}
+          <div className=' h-screen w-full'>
+            <div className='h-full flex justify-evenly items-center'>
+              <Search classNames={"w-1/2"}/>
             </div>
-            <h1>Sup, {user.attributes.email}</h1>
-            <button onClick={testAPI}>HELLOOO</button>
-            <button onClick={signOut}>Sign Out</button>
+            {/* <button onClick={signOut}>Sign Out</button> */}
 
-          </>
-        )}
-      </Authenticator>
+          </div>
+        {/* )}
+      </Authenticator> */}
     </>
   )
 }
